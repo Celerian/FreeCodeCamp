@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>FreeCodeCamp Tribute Page Project</title>
+		<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+	</head>
+	
+	<body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+		<div class="container">
+      <header>
+			  <h1 id="title" class="text-center">Mateworkx Survey</h1>
+			  <p id="description" class="description text-center">At Mateworkx, we rely on our users' feedback. Please feel free to fill out the form below so we can improve the site.</p>
+      </header>
+			<form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" class="form-control" required>
+        </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age<span class="clue">(optional)</label>
+          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age"/>
+        </div>
+        <div class="form-group">
+          <p>How satisfied are you with the current state of the Mateworkx App?</p>
+          <select id="dropdown" name="satisfaction" class="form-control" required>
+            <option disabled selected value>Select satisfaction level</option>
+            <option value="vsatisfied">Very Satisfied</option>
+            <option value="satisfied">Satisfied</option>
+            <option value="neutral">Neutral</option>
+            <option value="unsatisfied">Unsatisfied</option>
+            <option value="vdisatisfied">Very Unsatisfied</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <p>Would you recommend Mateworkx to a friend?</p>
+          <label>
+          <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked/>Definitely</label>
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+        <div class="form-group">
+      <p>
+        What is your favorite feature of Mateworkx?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="tracking">Animal Tracking</option>
+        <option value="orgmgmt">Organization Management</option>
+        <option value="community">Social and Community</option>
+        <option value="personalization">Personalization</option>
+      </select>
+    </div>    
+    <div class="form-group">
+      <p>
+        What would you like to see improved?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="lineage"
+          type="checkbox"
+          class="input-checkbox"
+        />Lineage Tracking</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="medical"
+          type="checkbox"
+          class="input-checkbox"
+        />Medical Tracking</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="trading"
+          type="checkbox"
+          class="input-checkbox"
+        />Trading</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="personalization"
+          type="checkbox"
+          class="input-checkbox"
+        />Personalization Options</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="orgmgmt"
+          type="checkbox"
+          class="input-checkbox"
+        />Organization Management Options</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="calendar"
+          type="checkbox"
+          class="input-checkbox"
+        />Calendar Features</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="community"
+          type="checkbox"
+          class="input-checkbox"
+        />Community Features</label
+      >
+    </div>
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+        Submit
+          </button>
+        </div>
+      </form>
+		</div>
+	</body>
+</html>
